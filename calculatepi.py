@@ -21,3 +21,8 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
+import math
+n= 100
+decimals = 10
+pi = 4*sum([((-1.0)**k)/(2*k+1) for k in range(0,n)])
+print("The appromximate value of pi is {0} " .format(round(pi, decimals)))
